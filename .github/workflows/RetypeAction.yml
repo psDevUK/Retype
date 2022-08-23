@@ -1,0 +1,15 @@
+name: YoutubeDownloader 
+on:
+  push:
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  Run-Tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: 🧪 Run PowerShell tests
+        run: gci #Invoke-Pester ./.tests/Integration.Tests.ps1 -Output Detailed -PassThru -ErrorAction Stop
