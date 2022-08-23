@@ -1,5 +1,5 @@
 BeforeAll {
-      Import-Module ./Retype/Retype/Retype.psd1
+      Import-Module .\Retype\Retype\Retype.psd1
 }
 
 Describe 'Install-Retype' {
