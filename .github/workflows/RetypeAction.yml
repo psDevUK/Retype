@@ -1,4 +1,4 @@
-name: YoutubeDownloader 
+name: RetypeInstallAction 
 on:
   push:
 defaults:
@@ -7,9 +7,9 @@ defaults:
 
 jobs:
   Run-Tests:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v3
       - name: 🧪 Run PowerShell tests
-        run: gci #Invoke-Pester ./.tests/Integration.Tests.ps1 -Output Detailed -PassThru -ErrorAction Stop
+        run: Invoke-Pester ./tests/Retype.ps1 -Output Detailed -PassThru -ErrorAction Stop
