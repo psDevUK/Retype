@@ -10,7 +10,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: 👀 actions/checkout@v3
+      - uses: actions/checkout@v3
       - name: 👉 Run PowerShell dotnet build
         run: | 
-         🐛 Gci | select fullname
+         Gci | select fullname
