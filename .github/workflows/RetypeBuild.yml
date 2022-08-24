@@ -1,4 +1,4 @@
-name: RetypeInstallAction 
+name: RetypeBuildAction
 on:
   push:
 defaults:
@@ -11,6 +11,6 @@ jobs:
 
     steps:
       - uses: 👀 actions/checkout@v3
-      - name: 👉 Run PowerShell tests
-        run: | 🐛
-         Gci | select fullname
+      - name: 👉 Run PowerShell dotnet build
+        run: | 
+         🐛 Gci | select fullname
