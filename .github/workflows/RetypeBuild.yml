@@ -23,5 +23,5 @@ jobs:
          git add publish
          git commit -m "new build"
          git remote add origin https://github.com/psDevUK/Retype.git
-         git push -u origin master
-         git push origin master
+         git push -u origin main
+         git push origin main
