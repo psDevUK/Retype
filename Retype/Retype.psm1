@@ -9,7 +9,7 @@ Function Install-Retype {
         Write-Host "Checking to see if Retype is in the System Environment Path variable..." -ForegroundColor Green
         Write-Host 'Retype not installed I will now fix this'
         $Environment = [System.Environment]::GetEnvironmentVariable('Path', 'Machine')
-        $AddRetype = ';C:\Buids\Retype\bin\Debug\net6.0\publish'
+        $AddRetype = ';$($env:SystemDrive)\%programfiles%\WindowsPowershell\Modules\Retype\bin\Debug\net6.0\publish'
         $Environment = $Environment.Insert($Environment.Length, $AddRetype)
         [System.Environment]::SetEnvironmentVariable('Path', $Environment, 'Machine')
     }
