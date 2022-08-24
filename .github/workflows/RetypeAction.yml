@@ -11,5 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: Retype
       - name: 🧪 Run PowerShell tests
         run: Invoke-Pester ./tests/Retype.ps1 -Output Detailed -PassThru -ErrorAction Stop
