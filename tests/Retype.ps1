@@ -1,6 +1,6 @@
 BeforeAll {
       Import-Module .\Retype\Retype.psd1
-      $AddRetype = ';.\Retype'
+      $AddRetype = ';D:\a\Retype\Retype\Retype'
       $Environment = $Environment.Insert($Environment.Length, $AddRetype)
       [System.Environment]::SetEnvironmentVariable('Path', $Environment, 'Machine')
 }
