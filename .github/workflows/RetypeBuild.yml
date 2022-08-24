@@ -1,0 +1,16 @@
+name: RetypeInstallAction 
+on:
+  push:
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  Run-Tests:
+    runs-on: windows-latest
+
+    steps:
+      - uses: 👀 actions/checkout@v3
+      - name: 👉 Run PowerShell tests
+        run: | 🐛
+         Gci | select fullname
