@@ -17,6 +17,8 @@ jobs:
          dotnet build
          dotnet publish
          Set-Location D:\a\Retype\Retype\Retype\bin\Debug\net6.0\
+         git config --global user.email "adambacon1@hotmail.com"
+         git config --global user.name "psdevuk"
          git init 
          git add publish
          git commit -m "new build"
