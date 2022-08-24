@@ -10,6 +10,7 @@ Function Install-Retype {
         Write-Host 'Retype not installed I will now fix this'
         $Environment = [System.Environment]::GetEnvironmentVariable('Path', 'Machine')
         $installed = $env:PSModulePath -split ';' | % {if(Test-path $_\Retype){$_}}
+        if ($installed.length -lt 1){Write-Host 'I cannot find the Retype module in any module path, please manually add the path to system environment path';break}
         Write-Host 'I found Retype installed at $(installed)'
         Write-Host 'I will now add ;$($installed)\Retype to environment path'
         $AddRetype = ';$($installed)\Retype'
