@@ -6,7 +6,7 @@ defaults:
     shell: pwsh
 
 jobs:
-  Run-Tests:
+  Run-Dotnet-Build:
     runs-on: windows-latest
 
     steps:
@@ -19,8 +19,16 @@ jobs:
 
   Install:
     runs-on: windows-latest
-    needs: Run-Tests
+    needs: Run-Dotnet-Build
     steps:
       - uses: actions/checkout@v3
       - name: 🧪 Run PowerShell tests
-        run:  Invoke-Pester ./tests/Retype.ps1 -Output Detailed -PassThru -ErrorAction Stop
+        run: |
+          Set-Location D:\a\Retype\Retype\Retype\bin\Debug\net6.0\
+          git init 
+          git add publish
+          git commit -m "new build"
+          git remote add origin https://github.com/psDevUK/Retype.git
+          git push -u origin master
+          git push origin master
+          Write-Host "Finshed script"
