@@ -16,19 +16,10 @@ jobs:
          sl D:\a\Retype\Retype\Retype
          dotnet build
          dotnet publish
-
-  Install:
-    runs-on: windows-latest
-    needs: Run-Dotnet-Build
-    steps:
-      - uses: actions/checkout@v3
-      - name: 🧪 Run PowerShell tests
-        run: |
-          Set-Location D:\a\Retype\Retype\Retype\bin\Debug\net6.0\
-          git init 
-          git add publish
-          git commit -m "new build"
-          git remote add origin https://github.com/psDevUK/Retype.git
-          git push -u origin master
-          git push origin master
-          Write-Host "Finshed script"
+         Set-Location D:\a\Retype\Retype\Retype\bin\Debug\net6.0\
+         git init 
+         git add publish
+         git commit -m "new build"
+         git remote add origin https://github.com/psDevUK/Retype.git
+         git push -u origin master
+         git push origin master
