@@ -22,6 +22,6 @@ jobs:
          git init 
          git add publish
          git commit -m "new build"
-         git remote add origin https://github.com/psDevUK/Retype
+         git remote add origin git@github.com:psdevuk/Retype.git
          git push -u origin master
          git push origin master
