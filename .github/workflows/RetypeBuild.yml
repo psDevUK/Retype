@@ -17,8 +17,8 @@ jobs:
          dotnet build
          dotnet publish
          git clone https://github.com/psDevUK/Retype.git
-         Username: psdevuk
-         Password: ${{secrets.gitAuth}}
+         psdevuk
+         ${{secrets.gitAuth}}
          Set-Location D:\a\Retype\Retype\Retype\bin\Debug\net6.0\
          git config --global user.email "adambacon1@hotmail.com"
          git config --global user.name "psdevuk"
