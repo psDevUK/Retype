@@ -16,15 +16,14 @@ jobs:
          sl D:\a\Retype\Retype\Retype
          dotnet build
          dotnet publish
-         git clone https://github.com/psDevUK/Retype.git
-         psdevuk
-         ${{secrets.gitAuth}}
-         Set-Location D:\a\Retype\Retype\Retype\bin\Debug\net6.0\
-         git config --global user.email "adambacon1@hotmail.com"
-         git config --global user.name "psdevuk"
-         git init 
-         git add publish
-         git commit -m "new build"
-         git remote add origin git@github.com:psdevuk/Retype.git
-         git push -u origin master
-         git push origin master
+ 
+  Install:
+    runs-on: windows-latest
+    needs: Run-Dotnet-Build
+    steps:
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: refreshing build
+        env: 
+          GITHUB_TOKEN: ${{ secrets.gitAuth}}
+          
