@@ -1,0 +1,12 @@
+D:\a\Retype\Retype\Retype\bin\Debug\net6.0\Retype.deps.json
+D:\a\Retype\Retype\Retype\bin\Debug\net6.0\Retype.dll
+D:\a\Retype\Retype\Retype\bin\Debug\net6.0\Retype.pdb
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\Retype.csproj.AssemblyReference.cache
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\Retype.GeneratedMSBuildEditorConfig.editorconfig
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\Retype.AssemblyInfoInputs.cache
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\Retype.AssemblyInfo.cs
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\Retype.csproj.CoreCompileInputs.cache
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\Retype.dll
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\refint\Retype.dll
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\Retype.pdb
+D:\a\Retype\Retype\Retype\obj\Debug\net6.0\ref\Retype.dll

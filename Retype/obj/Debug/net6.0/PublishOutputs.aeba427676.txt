@@ -1,0 +1,4 @@
+D:\a\Retype\Retype\Retype\bin\Debug\net6.0\publish\Retype.dll
+D:\a\Retype\Retype\Retype\bin\Debug\net6.0\publish\Retype.deps.json
+D:\a\Retype\Retype\Retype\bin\Debug\net6.0\publish\Retype.pdb
+D:\a\Retype\Retype\Retype\bin\Debug\net6.0\publish\System.Management.Automation.dll

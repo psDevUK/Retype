@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UOlTGn9chQzoM61iumoCmU7RmjPvHS6QV+PUBeaKdpW6mm605cn28xQUsF6b9h99gWdLvJLbLf6OBXXuHERWww==",
+  "success": true,
+  "projectFilePath": "D:\\a\\Retype\\Retype\\Retype\\Retype.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\runneradmin\\.nuget\\packages\\powershellstandard.library\\5.1.1\\powershellstandard.library.5.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
