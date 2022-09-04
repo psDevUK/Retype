@@ -1,0 +1,17 @@
+input: .
+output: Build
+url: adam-bacon.netlify.app
+branding:
+  title: My Powershell Blog
+  logo: imgs/powershell.png
+  logoDark: imgs/powershelld.png
+  logoAlign: right
+links:
+- text: :icon-mark-github:Github
+  link: https://github.com/psdevuk
+- text: :icon-comment:Twitter
+  link: https://twitter.com/psdevuk
+- text: :icon-mention:Linkedin
+  link: https://uk.linkedin.com/in/adam-bacon-t2022
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
